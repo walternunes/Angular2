@@ -13,19 +13,20 @@ import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component
 import { RecipeStartComponent } from './recipes/recipe-start.component';
 import { ShoppingListModule } from './shopping-list/shopping-list.module';
 import { RecipesModule } from './recipes/recipes.module';
+import { HomeComponent } from './home.component';
+import { CoreModule } from './core.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    DropdownDirective,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
     HttpModule,
     routing,
     ShoppingListModule,
-    RecipesModule
+    CoreModule
   ],
   providers: [ShoppingListService, RecipeService],
   bootstrap: [AppComponent]
